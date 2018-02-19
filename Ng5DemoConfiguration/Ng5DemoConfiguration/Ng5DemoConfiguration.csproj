@@ -161,6 +161,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.html" />
+    <Content Include="app\componentes\navbar\navbar.component.css" />
+    <Content Include="app\componentes\navbar\navbar.component.html" />
+    <Content Include="app\componentes\task-add\taskadd.component.css" />
+    <Content Include="app\componentes\task-add\taskadd.component.html" />
+    <Content Include="app\componentes\task-list\taskslist.component.css" />
+    <Content Include="app\componentes\task-list\taskslist.component.html" />
+    <Content Include="app\componentes\task\task.component.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -173,6 +181,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="package.json" />
+    <Content Include="bower.json" />
+    <TypeScriptCompile Include="app\componentes\task-list\taskslist.component.ts" />
+    <TypeScriptCompile Include="app\componentes\task\task.component.ts" />
+    <TypeScriptCompile Include="app\componentes\navbar\navbar.component.ts" />
+    <Content Include="app\componentes\task\task.component.css" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -216,13 +229,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\componentes\task-add\taskadd.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\models\task.ts" />
+    <TypeScriptCompile Include="app\services\data.service.ts" />
+    <TypeScriptCompile Include="app\videojuegos\videojuegos.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
